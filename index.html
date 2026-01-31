@@ -314,12 +314,34 @@
                         <button type="button" class="carousel-arrow left" onclick="scrollCarousel(-1)">‹</button>
                         <div class="carousel-wrapper">
                             <div class="milk-carousel" id="milkCarousel">
+                                <div class="milk-option" data-milk-id="6">
+                                    <img src="./Product_images/small-bottle-plain.jpg" alt="Goat Milk 190ml" class="carousel-product-image">
+                                    <div class="milk-name">Goat Milk (190ml)</div>
+                                    <div class="quantity-controls">
+                                        <button type="button" class="quantity-control-btn" onclick="changeItemQuantity(6, -1)">-</button>
+                                        <input style="color: #000;" type="number" class="quantity-input" id="qty-6" value="0" min="0" onchange="updateItemQuantity(6)">
+                                        <button type="button" class="quantity-control-btn" onclick="changeItemQuantity(6, 1)">+</button>
+                                    </div>
+                                    <button type="button" class="add-btn" onclick="addToCart(6)">+ Add</button>
+                                </div>
+                                
+                                <div class="milk-option" data-milk-id="5">
+                                    <img src="./Product_images/big-bottle-plain.jpg" alt="Goat Milk 500ml" class="carousel-product-image">
+                                    <div class="milk-name">Goat Milk (500ml)</div>
+                                    <div class="quantity-controls">
+                                        <button type="button" class="quantity-control-btn" onclick="changeItemQuantity(5, -1)">-</button>
+                                        <input style="color: #000;" type="number" class="quantity-input" id="qty-5" value="0" min="0" onchange="updateItemQuantity(5)">
+                                        <button type="button" class="quantity-control-btn" onclick="changeItemQuantity(5, 1)">+</button>
+                                    </div>
+                                    <button type="button" class="add-btn" onclick="addToCart(5)">+ Add</button>
+                                </div>
+                                
                                 <div class="milk-option" data-milk-id="1">
                                     <img src="./Product_images/1.png" alt="Chocolate Goat Milk" class="carousel-product-image">
                                     <div class="milk-name">Chocolate Goat Milk</div>
                                     <div class="quantity-controls">
                                         <button type="button" class="quantity-control-btn" onclick="changeItemQuantity(1, -1)">-</button>
-                                        <input style="color: #000;" type="number" class="quantity-input" id="qty-1" value="0" min="0" onchange="updateItemQuantity(1)">
+                                        <input style="color: #000000;" type="number" class="quantity-input" id="qty-1" value="0" min="0" onchange="updateItemQuantity(1)">
                                         <button type="button" class="quantity-control-btn" onclick="changeItemQuantity(1, 1)">+</button>
                                     </div>
                                     <button type="button" class="add-btn" onclick="addToCart(1)">+ Add</button>
@@ -358,27 +380,6 @@
                                     <button type="button" class="add-btn" onclick="addToCart(4)">+ Add</button>
                                 </div>
 
-                                <div class="milk-option" data-milk-id="5">
-                                    <img src="./Product_images/big-bottle-plain.jpg" alt="Goat Milk 500ml" class="carousel-product-image">
-                                    <div class="milk-name">Goat Milk (500ml)</div>
-                                    <div class="quantity-controls">
-                                        <button type="button" class="quantity-control-btn" onclick="changeItemQuantity(5, -1)">-</button>
-                                        <input style="color: #000;" type="number" class="quantity-input" id="qty-5" value="0" min="0" onchange="updateItemQuantity(5)">
-                                        <button type="button" class="quantity-control-btn" onclick="changeItemQuantity(5, 1)">+</button>
-                                    </div>
-                                    <button type="button" class="add-btn" onclick="addToCart(5)">+ Add</button>
-                                </div>
-
-                                <div class="milk-option" data-milk-id="6">
-                                    <img src="./Product_images/small-bottle-plain.jpg" alt="Goat Milk 190ml" class="carousel-product-image">
-                                    <div class="milk-name">Goat Milk (190ml)</div>
-                                    <div class="quantity-controls">
-                                        <button type="button" class="quantity-control-btn" onclick="changeItemQuantity(6, -1)">-</button>
-                                        <input style="color: #000;" type="number" class="quantity-input" id="qty-6" value="0" min="0" onchange="updateItemQuantity(6)">
-                                        <button type="button" class="quantity-control-btn" onclick="changeItemQuantity(6, 1)">+</button>
-                                    </div>
-                                    <button type="button" class="add-btn" onclick="addToCart(6)">+ Add</button>
-                                </div>
                             </div>
                         </div>
                         <button type="button" class="carousel-arrow right" onclick="scrollCarousel(1)">›</button>
