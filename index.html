@@ -6,7 +6,6 @@
     <link rel="icon" type="image/png" href="./Product_images/JIGlmGfldDcQSUfJapkyqTGcRZlDNBXDNwE2QuXd.png">
     <title>Fresh Farm Milk - Delivered to Your Doorstep</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 <body>
     <!-- Menu Overlay -->
@@ -32,25 +31,22 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-    <div class="hero-container">
-        <!-- Hero Image -->
-        <div class="hero-image-wrapper">
-            <img src="./Product_images/banner.jpg" 
-                 alt="Farm Fresh Milk - Pure and Nutritious" 
-                 class="hero-image">
-        </div>
+        <div class="hero-container">
+            <!-- Hero Image -->
+            <div class="hero-image-wrapper">
+                <img src="./Product_images/banner.jpg" 
+                     alt="Farm Fresh Milk - Pure and Nutritious" 
+                     class="hero-image">
+            </div>
 
-        <!-- Call to Action -->
-        <div class="hero-cta">
-            <h1>Farm Fresh Milk Delivered Daily</h1>
-            <p>Experience the pure taste of nature with our premium quality milk, straight from local farms to your doorstep</p>
-            <button class="order-btn" onclick="openOrderModal()">Order Now</button>
+            <!-- Call to Action -->
+            <div class="hero-cta">
+                <h1>Farm Fresh Milk Delivered Daily</h1>
+                <p>Experience the pure taste of nature with our premium quality milk, straight from local farms to your doorstep</p>
+                <button class="order-btn" onclick="openOrderModal()">Order Now</button>
+            </div>
         </div>
-    </div>
-</section>
-
-    <!-- Products Section -->
-    
+    </section>
 
     <!-- Milk Products Cards Section -->
     <section class="product-collection" id="products">
@@ -115,7 +111,7 @@
                             <div class="product-price">
                                 <span class="product-price-currency">Rs.</span>260
                             </div>
-                            <button class="add-to-cart-btn" onclick="scrollToTop()">Add to Cart</button>
+                            <button class="add-to-cart-btn" onclick="openOrderModal()">Add to Cart</button>
                         </div>
                     </div>
                 </article>
@@ -142,13 +138,12 @@
                 <!-- Product Card 5 -->
                 <article class="product-card">
                     <div class="product-image-wrapper">
-                        <span class="product-badge">Popular</span>
                         <img src="./Product_images/2.png" 
                              alt="Greek Yogurt" 
                              class="product-image">
                     </div>
                     <div class="product-details">
-                        <h3 class="product-name">Goat Milk (Faluda)</h3>
+                        <h3 class="product-name">Goat Milk (Strawberry)</h3>
                         <p class="product-quantity">190 ML</p>
                         <div class="product-footer">
                             <div class="product-price">
@@ -163,7 +158,7 @@
                 <article class="product-card">
                     <div class="product-image-wrapper">
                         <img src="./Product_images/3.png" 
-                             alt="Orange Juice" 
+                             alt="Almond Butter" 
                              class="product-image">
                     </div>
                     <div class="product-details">
@@ -181,273 +176,138 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-        <h2>What Our Customers Say</h2>
-        <div class="testimonial-grid">
-            <div class="testimonial-card">
-                <div class="stars">★★★★★</div>
-                <p class="testimonial-text">"The best milk I've ever tasted! My kids love it, and I feel good knowing it's fresh and natural. Delivery is always on time!"</p>
-                <p class="testimonial-author">- Priya S., Colombo</p>
-            </div>
-            <div class="testimonial-card">
-                <div class="stars">★★★★★</div>
-                <p class="testimonial-text">"I switched to goat milk for health reasons, and Fresh Farm Milk has been a game-changer. Excellent quality and service!"</p>
-                <p class="testimonial-author">- Rohan M., Kandy</p>
-            </div>
-            <div class="testimonial-card">
-                <div class="stars">★★★★★</div>
-                <p class="testimonial-text">"Supporting local farmers while getting premium quality milk? That's a win-win! Highly recommend Fresh Farm Milk."</p>
-                <p class="testimonial-author">- Anushka P., Galle</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Benefits Section -->
-    <section class="why-choose-us" id="why-choose-us">
-    <div class="why-choose-container">
-        <div class="why-choose-header">
-            <h2>Why Choose Us</h2>
-            <p>Discover what makes us the preferred choice for farm-fresh dairy products across Sri Lanka</p>
-        </div>
-
-        <div class="why-choose-grid">
-            <!-- Card 1: 100% Fresh -->
-            <div class="why-choose-card">
-                <div class="why-choose-icon">
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 2C12 2 7 6 7 10C7 13.31 9.69 16 13 16C16.31 16 19 13.31 19 10C19 6 14 2 14 2H12Z" stroke="#04195e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-                        <path d="M12 16V22" stroke="#04195e" stroke-width="2" stroke-linecap="round"/>
-                        <path d="M8 19H16" stroke="#63a200" stroke-width="2" stroke-linecap="round"/>
-                        <circle cx="12" cy="10" r="2" fill="#63a200"/>
-                    </svg>
-                </div>
-                <h3>100% Fresh</h3>
-                <p>Our milk is collected daily and delivered fresh to ensure maximum nutrition and taste.</p>
-            </div>
-
-            <!-- Card 2: Island-Wide Delivery -->
-            <div class="why-choose-card">
-                <div class="why-choose-icon">
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 3H15V13H1V3Z" stroke="#04195e" stroke-width="2" stroke-linejoin="round" fill="none"/>
-                        <path d="M15 5H19L23 9V13H15V5Z" stroke="#04195e" stroke-width="2" stroke-linejoin="round" fill="none"/>
-                        <circle cx="5.5" cy="17.5" r="2.5" stroke="#04195e" stroke-width="2" fill="none"/>
-                        <circle cx="18.5" cy="17.5" r="2.5" stroke="#04195e" stroke-width="2" fill="none"/>
-                        <path d="M8 17.5H16" stroke="#04195e" stroke-width="2" stroke-linecap="round"/>
-                        <path d="M3 17.5H1" stroke="#04195e" stroke-width="2" stroke-linecap="round"/>
-                        <path d="M21 17.5H23" stroke="#04195e" stroke-width="2" stroke-linecap="round"/>
-                        <path d="M6 8L10 8" stroke="#63a200" stroke-width="2" stroke-linecap="round"/>
-                        <circle cx="19" cy="9" r="1" fill="#63a200"/>
-                    </svg>
-                </div>
-                <h3>We offer Delivery!</h3>
-                <p>Learn more about delivery below sections.</p>
-            </div>
-
-            <!-- Card 3: Hygienic Packaging -->
-            <div class="why-choose-card">
-                <div class="why-choose-icon">
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M21 8V16C21 17.1 20.1 18 19 18H5C3.9 18 3 17.1 3 16V8" stroke="#04195e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-                        <path d="M1 4H23V8H1V4Z" stroke="#04195e" stroke-width="2" stroke-linejoin="round" fill="none"/>
-                        <path d="M12 8V18" stroke="#04195e" stroke-width="2" stroke-linecap="round"/>
-                        <rect x="7" y="11" width="10" height="4" rx="1" stroke="#63a200" stroke-width="2" fill="none"/>
-                        <circle cx="12" cy="6" r="1" fill="#63a200"/>
-                        <path d="M9 13H15" stroke="#04195e" stroke-width="1.5" stroke-linecap="round"/>
-                    </svg>
-                </div>
-                <h3>Hygienic Packaging</h3>
-                <p>State-of-the-art packaging ensures safety and maintains freshness.</p>
-            </div>
-
-            <!-- Card 4: Supporting Local -->
-            <div class="why-choose-card">
-                <div class="why-choose-icon">
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#04195e" stroke-width="2" fill="none"/>
-                        <path d="M3.51 9H20.49" stroke="#04195e" stroke-width="2" stroke-linecap="round"/>
-                        <path d="M3.51 15H20.49" stroke="#04195e" stroke-width="2" stroke-linecap="round"/>
-                        <path d="M12 3C14.5 6 16 9 16 12C16 15 14.5 18 12 21" stroke="#04195e" stroke-width="2" stroke-linecap="round" fill="none"/>
-                        <path d="M12 3C9.5 6 8 9 8 12C8 15 9.5 18 12 21" stroke="#04195e" stroke-width="2" stroke-linecap="round" fill="none"/>
-                        <circle cx="12" cy="12" r="2" fill="#63a200"/>
-                        <path d="M7 7L9 9" stroke="#63a200" stroke-width="1.5" stroke-linecap="round"/>
-                        <path d="M15 15L17 17" stroke="#63a200" stroke-width="1.5" stroke-linecap="round"/>
-                    </svg>
-                </div>
-                <h3>Supporting Local</h3>
-                <p>Every purchase supports Sri Lankan farmers and sustainable agriculture.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
     <!-- About Section -->
     <section class="about" id="about">
-        <h2>About Us</h2>
+        <h2>About Farm Lanka</h2>
         <div class="about-content">
             <div class="about-text">
-                <p>Welcome to Fresh Farm Milk, Sri Lanka's trusted source for premium quality goat and cow milk. Our journey began with a simple mission: to bring the freshest, most nutritious milk straight from our farm to your family's table.</p>
-                <p>We take pride in our commitment to natural farming practices, ensuring that every bottle of milk we deliver is packed with wholesome goodness. Our happy, healthy animals graze on lush green pastures, and we never use artificial hormones or additives.</p>
-                <p>Supporting local farmers and communities is at the heart of what we do. When you choose Fresh Farm Milk, you're not just getting the best milk – you're supporting sustainable agriculture and the livelihoods of Sri Lankan farming families.</p>
+                <p>Farm Lanka is committed to bringing you the freshest, highest-quality goat milk products straight from our farm to your table. We believe in sustainable farming practices and treating our animals with the utmost care and respect.</p>
+                <p>Our goats are raised on lush, green pastures and fed a natural, nutritious diet. We never use hormones or antibiotics, ensuring that every bottle of milk is pure, wholesome, and packed with natural goodness.</p>
+                <p>From traditional plain milk to delicious flavored varieties, we offer a range of products to suit every taste and preference.</p>
             </div>
-            <img src="https://plus.unsplash.com/premium_photo-1723488393916-eef2bffed487?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z29hdHMlMjBhZXN0aGV0aWN8ZW58MHx8MHx8fDA%3D" alt="Farm" class="about-image">
+            <img src="./Product_images/banner.jpg" alt="Farm Lanka" class="about-image">
         </div>
     </section>
 
-    <!-- Delivery Section -->
-    <section class="delivery">
-        <h2>Delivery Information</h2>
-        <div class="delivery-info">
-            <div class="delivery-card">
-                <h3>Coverage Areas</h3>
-                <p>We deliver to Colombo, Kandy, Galle, Negombo, Jaffna, and surrounding areas. Contact us for delivery to other locations!</p>
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <div class="why-choose-container">
+            <div class="why-choose-header">
+                <h2>Why Choose Farm Lanka?</h2>
+                <p>Experience the difference with our premium goat milk products</p>
             </div>
-            <div class="delivery-card">
-                <h3>Delivery Times</h3>
-                <p>Orders placed before 6 PM are delivered the next morning. Fresh milk at your doorstep every day!</p>
-            </div>
-            <div class="delivery-card">
-                <h3>Minimum Order</h3>
-                <p>No minimum order requirement. Order as few or as many bottles as you need!</p>
-            </div>
-        </div>
-    </section>
 
-    <!-- FAQ Section -->
-    <section class="faq">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-list">
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">
-                    Is your milk pasteurized?
-                    <span>+</span>
+            <div class="why-choose-grid">
+                <div class="why-choose-card">
+                    <div class="why-choose-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Premium Quality</h3>
+                    <p>Our goats are raised with care on natural pastures, ensuring the highest quality milk for your family</p>
                 </div>
-                <div class="faq-answer">
-                    Yes, all our milk is carefully pasteurized to ensure safety while preserving maximum nutrients and natural flavor.
+
+                <div class="why-choose-card">
+                    <div class="why-choose-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 13H11V3H3V13ZM3 21H11V15H3V21ZM13 21H21V11H13V21ZM13 3V9H21V3H13Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Fresh Daily Delivery</h3>
+                    <p>Enjoy farm-fresh milk delivered to your doorstep every day, ensuring maximum freshness and nutrition</p>
                 </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">
-                    Do you deliver nationwide?
-                    <span>+</span>
+
+                <div class="why-choose-card">
+                    <div class="why-choose-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>100% Natural</h3>
+                    <p>No hormones, no antibiotics, no preservatives - just pure, natural goodness in every bottle</p>
                 </div>
-                <div class="faq-answer">
-                    We currently deliver to major cities and surrounding areas. Contact us to check if we deliver to your location!
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">
-                    Can I subscribe for daily delivery?
-                    <span>+</span>
-                </div>
-                <div class="faq-answer">
-                    Absolutely! Contact us via WhatsApp to set up a daily or weekly subscription plan tailored to your needs.
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">
-                    What if I'm not satisfied with my order?
-                    <span>+</span>
-                </div>
-                <div class="faq-answer">
-                    Your satisfaction is our priority. If you're not completely happy with your order, please contact us immediately and we'll make it right.
+
+                <div class="why-choose-card">
+                    <div class="why-choose-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM9 17H7V10H9V17ZM13 17H11V7H13V17ZM17 17H15V13H17V17Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Variety of Flavors</h3>
+                    <p>Choose from plain, chocolate, strawberry, vanilla, and almond flavors to suit your taste</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <!-- Footer Section -->
-<footer>
-    <div class="footer-container">
-        <div class="footer-main">
-            <!-- Left Side - Contact Form -->
-            <div class="footer-left">
-                <h3>Get In Touch</h3>
-                <p>Have questions? Send us a message and we'll get back to you shortly.</p>
-                
-                <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Your Name" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" placeholder="Your message here..." required></textarea>
-                    </div>
-                    
-                    <button type="submit" class="submit-form-btn">Send Message</button>
-                </form>
-            </div>
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-left">
+                    <h3>Farm Lanka</h3>
+                    <p>Fresh goat milk delivered to your doorstep. Experience the pure taste of nature with our premium quality products.</p>
+                </div>
 
-            <!-- Right Side - Contact Information -->
-            <div class="footer-right">
-                <h3>Contact Us</h3>
-                
-                <div class="contact-info">
-                    <!-- Email -->
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M3 8L10.89 13.26C11.2187 13.4793 11.6049 13.5963 12 13.5963C12.3951 13.5963 12.7813 13.4793 13.11 13.26L21 8M5 19H19C19.5304 19 20.0391 18.7893 20.4142 18.4142C20.7893 18.0391 21 17.5304 21 17V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H5C4.46957 5 3.96086 5.21071 3.58579 5.58579C3.21071 5.96086 3 6.46957 3 7V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                <div class="footer-right">
+                    <h3>Contact Us</h3>
+                    <div class="contact-list">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <span class="label">Email</span>
+                                <a href="mailto:farmlanka@gmail.com" class="value">farmlanka@gmail.com</a>
+                            </div>
                         </div>
-                        <div class="contact-details">
-                            <span class="label">Email</span>
-                            <a href="mailto:farmlanka@gmail.com" class="value">farmlanka@gmail.com</a>
-                        </div>
-                    </div>
 
-                    <!-- Phone -->
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M3 5C3 3.89543 3.89543 3 5 3H8.27924C8.70967 3 9.09181 3.27543 9.22792 3.68377L10.7257 8.17721C10.8831 8.64932 10.6694 9.16531 10.2243 9.38787L7.96701 10.5165C9.06925 12.9612 11.0388 14.9308 13.4835 16.033L14.6121 13.7757C14.8347 13.3306 15.3507 13.1169 15.8228 13.2743L20.3162 14.7721C20.7246 14.9082 21 15.2903 21 15.7208V19C21 20.1046 20.1046 21 19 21H18C9.71573 21 3 14.2843 3 6V5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.62 10.79C8.06 13.62 10.38 15.93 13.21 17.38L15.41 15.18C15.68 14.91 16.08 14.82 16.43 14.94C17.55 15.31 18.76 15.51 20 15.51C20.55 15.51 21 15.96 21 16.51V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <span class="label">Phone</span>
+                                <a href="tel:+94756297207" class="value">+94 75 629 7207</a>
+                            </div>
                         </div>
-                        <div class="contact-details">
-                            <span class="label">Phone</span>
-                            <a href="tel:+94777300555" class="value">+94 77 730 0555</a>
-                        </div>
-                    </div>
 
-                    <!-- WhatsApp -->
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M17.472 14.382C17.015 14.154 14.763 13.042 14.341 12.893C13.919 12.744 13.615 12.669 13.311 13.126C13.007 13.583 12.086 14.624 11.818 14.928C11.55 15.232 11.282 15.268 10.825 15.04C10.368 14.812 8.914 14.346 7.188 12.812C5.846 11.616 4.942 10.142 4.674 9.685C4.406 9.228 4.643 8.982 4.872 8.754C5.078 8.548 5.329 8.216 5.557 7.948C5.785 7.68 5.86 7.484 6.009 7.18C6.158 6.876 6.083 6.608 5.969 6.38C5.855 6.152 4.951 3.898 4.565 2.984C4.179 2.07 3.793 2.196 3.525 2.196C3.257 2.196 2.953 2.196 2.649 2.196C2.345 2.196 1.852 2.31 1.43 2.767C1.008 3.224 -0.104 4.336 -0.104 6.59C-0.104 8.844 1.466 11.026 1.694 11.33C1.922 11.634 4.942 16.244 9.516 18.21C14.09 20.176 14.09 19.495 15.083 19.423C16.076 19.351 17.984 18.318 18.37 17.212C18.756 16.106 18.756 15.178 18.642 14.95C18.528 14.722 18.224 14.608 17.767 14.38L17.472 14.382Z" fill="white"/>
-                                <path d="M20.52 3.449C18.24 1.245 15.24 0.001 12.045 0C5.463 0 0.104 5.334 0.101 11.892C0.1 13.988 0.644 16.034 1.68 17.837L0 24L6.335 22.346C8.073 23.289 10.035 23.783 12.03 23.784H12.036C18.617 23.784 23.977 18.45 23.98 11.892C23.981 8.712 22.801 5.653 20.52 3.449ZM12.045 21.785H12.04C10.27 21.784 8.533 21.311 7.018 20.42L6.662 20.203L2.884 21.173L3.872 17.522L3.633 17.153C2.64 15.576 2.117 13.764 2.118 11.892C2.12 6.448 6.576 2.017 12.05 2.017C14.703 2.018 17.182 3.052 19.032 4.898C20.882 6.744 21.963 9.214 21.962 11.891C21.96 17.335 17.504 21.766 12.045 21.785Z" fill="white"/>
-                            </svg>
-                        </div>
-                        <div class="contact-details">
-                            <span class="label">WhatsApp</span>
-                            <a href="https://wa.me/94777300555" target="_blank" class="value">Chat with us</a>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.472 14.382C17.015 14.154 14.763 13.042 14.341 12.893C13.919 12.744 13.615 12.669 13.311 13.126C13.007 13.583 12.086 14.624 11.818 14.928C11.55 15.232 11.282 15.268 10.825 15.04C10.368 14.812 8.914 14.346 7.188 12.812C5.846 11.616 4.942 10.142 4.674 9.685C4.406 9.228 4.643 8.982 4.872 8.754C5.078 8.548 5.329 8.216 5.557 7.948C5.785 7.68 5.86 7.484 6.009 7.18C6.158 6.876 6.083 6.608 5.969 6.38C5.855 6.152 4.951 3.898 4.565 2.984C4.179 2.07 3.793 2.196 3.525 2.196C3.257 2.196 2.953 2.196 2.649 2.196C2.345 2.196 1.852 2.31 1.43 2.767C1.008 3.224 -0.104 4.336 -0.104 6.59C-0.104 8.844 1.466 11.026 1.694 11.33C1.922 11.634 4.942 16.244 9.516 18.21C14.09 20.176 14.09 19.495 15.083 19.423C16.076 19.351 17.984 18.318 18.37 17.212C18.756 16.106 18.756 15.178 18.642 14.95C18.528 14.722 18.224 14.608 17.767 14.38L17.472 14.382Z" fill="white"/>
+                                    <path d="M20.52 3.449C18.24 1.245 15.24 0.001 12.045 0C5.463 0 0.104 5.334 0.101 11.892C0.1 13.988 0.644 16.034 1.68 17.837L0 24L6.335 22.346C8.073 23.289 10.035 23.783 12.03 23.784H12.036C18.617 23.784 23.977 18.45 23.98 11.892C23.981 8.712 22.801 5.653 20.52 3.449ZM12.045 21.785H12.04C10.27 21.784 8.533 21.311 7.018 20.42L6.662 20.203L2.884 21.173L3.872 17.522L3.633 17.153C2.64 15.576 2.117 13.764 2.118 11.892C2.12 6.448 6.576 2.017 12.05 2.017C14.703 2.018 17.182 3.052 19.032 4.898C20.882 6.744 21.963 9.214 21.962 11.891C21.96 17.335 17.504 21.766 12.045 21.785Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <span class="label">WhatsApp</span>
+                                <a href="https://wa.me/94756297207" target="_blank" class="value">Chat with us</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Footer Bottom - Copyright -->
-        <div class="footer-bottom">
-            <p>&copy; 2026 <strong>Farm Lanka</strong>. All Rights Reserved. | Delivering Fresh, Supporting Local</p>
+            <!-- Footer Bottom - Copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 <strong>Farm Lanka</strong>. All Rights Reserved. | Delivering Fresh, Supporting Local</p>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
     <!-- Order Modal -->
     <div id="orderModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeOrderModal()">&times;</span>
             <h2>Place Your Order</h2>
-            <div class="form-group">
+            
+            <form id="orderForm">
+                <div class="form-group">
                     <label>Select Milk Types</label>
                     <!-- Milk Products Carousel Section -->
                     <div class="carousel-container">
@@ -499,7 +359,7 @@
                                 </div>
 
                                 <div class="milk-option" data-milk-id="5">
-                                    <img src="./Product_images/big-bottle-plain.jpg" alt="Goat Milk (1 L)" class="carousel-product-image">
+                                    <img src="./Product_images/big-bottle-plain.jpg" alt="Goat Milk 500ml" class="carousel-product-image">
                                     <div class="milk-name">Goat Milk (500ml)</div>
                                     <div class="quantity-controls">
                                         <button type="button" class="quantity-control-btn" onclick="changeItemQuantity(5, -1)">-</button>
@@ -510,8 +370,8 @@
                                 </div>
 
                                 <div class="milk-option" data-milk-id="6">
-                                    <img src="/Product_images/small-bottle-plain.jpg" alt="Goat Milk" class="carousel-product-image">
-                                    <div class="milk-name">Goat Milk (190 Ml)</div>
+                                    <img src="./Product_images/small-bottle-plain.jpg" alt="Goat Milk 190ml" class="carousel-product-image">
+                                    <div class="milk-name">Goat Milk (190ml)</div>
                                     <div class="quantity-controls">
                                         <button type="button" class="quantity-control-btn" onclick="changeItemQuantity(6, -1)">-</button>
                                         <input style="color: #000;" type="number" class="quantity-input" id="qty-6" value="0" min="0" onchange="updateItemQuantity(6)">
@@ -521,23 +381,28 @@
                                 </div>
                             </div>
                         </div>
-            <form id="orderForm">
-                <div class="form-group">
-                    <label>Email Address *</label>
-                    <input type="email" id="email" required>
+                        <button type="button" class="carousel-arrow right" onclick="scrollCarousel(1)">›</button>
+                    </div> 
                 </div>
+
                 <div class="form-group">
                     <label>Full Name *</label>
                     <input type="text" id="fullName" required>
                 </div>
+
+                <div class="form-group">
+                    <label>Phone Number *</label>
+                    <input type="tel" id="phone" placeholder="+94 75 629 7207" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" id="email" placeholder="Optional">
+                </div>
+
                 <div class="form-group">
                     <label>Delivery Address *</label>
                     <textarea id="address" rows="3" required></textarea>
-                </div>
-                
-                
-                        <button type="button" class="carousel-arrow right" onclick="scrollCarousel(1)">›</button>
-                    </div> 
                 </div>
 
                 <div class="my-order-section">
@@ -547,9 +412,11 @@
                     </div>
                 </div>
 
-                <button type="submit" class="submit-btn" id="submitBtn">Send Order to WhatsApp</button>
+                <button type="submit" id="submitBtn" class="submit-btn" disabled>Send Order via WhatsApp</button>
             </form>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
